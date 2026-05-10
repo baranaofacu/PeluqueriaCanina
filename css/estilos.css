@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --azul-primario: #1700ff;
+  --azul-claro: #0070ff;
+  --naranja-acento: #ffa500;
+  --naranja-fuerte: #ff6300;
+  --ocre-natural: #aa8239;
+
+  --fondo-body: #f2edd5;
+  --texto-oscuro: #1a1a1a;
+}
+
+body {
+  background-color: #b8d4e3;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.logo-main {
+  width: 300px; /* Ajusta el tamaño del logo según sea necesario */
+  height: auto;
+}
+
+header {
+  background-color: #e7390d;
+  color: white;
+  /* Quitamos el padding lateral para que la nav toque los bordes */
+  padding: 15px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* El h1 necesita un poquito de margen para no quedar pegado arriba */
+header h1 {
+  margin-bottom: 20px;
+}
+
+nav {
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+
+  margin: 0;
+  padding: 15px 40px; /* Un poco de padding para que no quede pegado a los bordes */
+  gap: 30px;
+  background-color: #fe730f;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: var(--naranja-acento);
+  text-decoration: none;
+}
+
+main {
+  padding: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+aside {
+  align-self: flex-start;
+  flex: 0 0 25%;
+  background-color: #28666e;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #1d1e18;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* Reglas comunes de Responsive */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column; /* Apila la sección y el aside uno sobre otro */
+    padding: 20px;
+    gap: 20px;
+  }
+
+  aside {
+    flex-direction: column; /* En celu que ocupe todo el ancho disponible */
+  }
+}

@@ -1,0 +1,116 @@
+.seccion-bienvenida {
+  flex-direction: column;
+  background-color: #033f63;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.servicios-destacados {
+  list-style: none;
+  display: flex;
+}
+
+.redes-sociales {
+  background-color: #59A96A;
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+}
+
+.redes-sociales img {
+  width: 35px; /* Tamaño fijo para que todos sean iguales */
+  height: 35px; /* Mantener cuadrado */
+}
+
+.carrusel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Cambiado: para que las flechas queden a los costados */
+  width: 100%;
+  gap: 10px;
+}
+
+.imagenes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.img {
+  box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.85);
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  border-radius: 15px;
+  margin: 5px;
+  object-fit: cover;
+  filter: saturate(175%);
+}
+
+.texto {
+  width: 90%;
+  overflow: hidden;
+  position: absolute;
+  flex-direction: column;
+  margin-bottom: 9px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(63, 106, 138, 0.21);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.texto h3 {
+  text-shadow: 0px 0px 15px black;
+  padding-top: auto;
+  color: white;
+  font-size: auto;
+}
+
+.imagenes .texto {
+  width: 90%;
+  max-width: 400px;
+  height: 50px;
+}
+
+.puntos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.puntos p {
+  font-size: 100px;
+  font-weight: 500;
+  margin-top: -50px;
+  color: white;
+}
+
+.puntos .bold {
+  font-weight: 700;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: black;
+}
+
+/* Reglas Responsive específicas de la Pag 1 */
+@media (max-width: 768px) {
+  .img {
+    width: 100%; /* La imagen del carrusel se adapta al ancho del celu */
+  }
+
+  .texto {
+    position: relative; /* Para que el texto no quede superpuesto a la imagen en celular */
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .texto h3 {
+    text-align: center; /* Centra el texto dentro del contenedor */
+    font-size: 18px; /* Achicamos un poco el texto para que entre en el cartel */
+  }
+}
