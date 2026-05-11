@@ -5,6 +5,7 @@
 }
 
 .turnos-section {
+  width: 70%;
   max-width: 520px;
   background-color: #9BDEAC;
   padding: 30px;
@@ -16,24 +17,24 @@
   margin-bottom: 24px;
 }
 
-.field {
+.campo {
   margin-bottom: 16px;
   display: flex;
   flex-direction: column;
 }
 
-.field label {
+.campo label {
   font-size: 14px;
   margin-bottom: 5px;
   color: #333;
 }
 
-.field .req {
+.campo .req {
   color: #d85a30;
 }
 
-.field input,
-.field select {
+.campo input,
+.campo select {
   padding: 8px 12px;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -41,8 +42,8 @@
   font-family: "Roboto", sans-serif;
 }
 
-.field input.invalido,
-.field select.invalido {
+.campo input.invalido,
+.campo select.invalido {
   border-color: #e24b4a;
   outline: none;
   box-shadow: 0 0 0 2px rgba(226, 75, 74, 0.2);
@@ -90,4 +91,12 @@
 
 .confirmacion.visible {
   display: block;
+}
+
+@media (max-width: 768px) {
+  .turnos-section {
+    justify-content: center;
+    width: 90%;
+    padding: 20px;
+  }
 }

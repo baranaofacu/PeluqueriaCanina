@@ -32,7 +32,7 @@
         <h2>Sacar un turno</h2>
 
         <form id="form-turno" novalidate>
-          <div class="field">
+          <div class="campo">
             <label for="duenio"
               >Nombre del dueño <span class="req">*</span></label
             >
@@ -40,7 +40,7 @@
             <p class="error-msg" id="err-duenio"></p>
           </div>
 
-          <div class="field">
+          <div class="campo">
             <label for="mascota"
               >Nombre de la mascota <span class="req">*</span></label
             >
@@ -48,27 +48,27 @@
             <p class="error-msg" id="err-mascota"></p>
           </div>
 
-          <div class="field">
+          <div class="campo">
             <label for="servicio">Servicio <span class="req">*</span></label>
             <select id="servicio">
               <option value="">-- Seleccioná un servicio --</option>
               <option value="banio">Baño</option>
               <option value="corte">Corte de pelo</option>
               <option value="spa">Spa</option>
-              <option value="banio-corte">Baño + Corte</option>
+              <option value="baño-corte">Baño + Corte</option>
               <option value="desparasitacion">Desparasitación</option>
               <option value="unas">Corte de uñas</option>
             </select>
             <p class="error-msg" id="err-servicio"></p>
           </div>
 
-          <div class="field">
+          <div class="campo">
             <label for="fecha">Fecha <span class="req">*</span></label>
             <input type="date" id="fecha" />
             <p class="error-msg" id="err-fecha"></p>
           </div>
 
-          <div class="field">
+          <div class="campo">
             <label for="hora">Hora <span class="req">*</span></label>
             <input type="time" id="hora" />
             <p class="error-msg" id="err-hora"></p>
@@ -87,5 +87,6 @@
         12:30hs.
       </p>
     </footer>
+    <script src="js/funciones-turnos.js"></script>
   </body>
 </html>

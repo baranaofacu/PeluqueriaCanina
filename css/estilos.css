@@ -101,4 +101,8 @@ footer {
   aside {
     flex-direction: column; /* En celu que ocupe todo el ancho disponible */
   }
+  nav .nav-list {
+    justify-content: center; /* Centra los enlaces en móvil */
+    padding: 15px 20px; /* Reduce el padding en móvil */
+  }
 }
