@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
           duenio: document.getElementById("duenio").value,
           mascota: document.getElementById("mascota").value,
           servicio: document.getElementById("servicio").value,
-          fecha: document.getElementById("fecha").valuea,
+          fecha: document.getElementById("fecha").value,
           hora: document.getElementById("hora").value
         };
 
