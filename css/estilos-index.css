@@ -13,7 +13,7 @@
 }
 
 .redes-sociales {
-  background-color: #59A96A;
+  background-color: #6B9080;
   padding: 20px;
   border-radius: 10px;
   color: black;
@@ -27,9 +27,10 @@
 .carrusel {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Cambiado: para que las flechas queden a los costados */
+  justify-content: space-between;
   width: 100%;
   gap: 10px;
+
 }
 
 .imagenes {
@@ -48,6 +49,7 @@
   margin: 5px;
   object-fit: cover;
   filter: saturate(175%);
+  max-width: 500px;
 }
 
 .texto {
@@ -97,20 +99,20 @@
   color: black;
 }
 
-/* Reglas Responsive específicas de la Pag 1 */
+/*reglas responsive de la Pag  */
 @media (max-width: 768px) {
   .img {
-    width: 100%; /* La imagen del carrusel se adapta al ancho del celu */
+    width: 100%; /*imagen del carrusel se adapta al ancho del celu */
   }
 
   .texto {
-    position: relative; /* Para que el texto no quede superpuesto a la imagen en celular */
+    position: relative; /*para que el texto no quede superpuesto a la imagen en celular*/
     width: 80%;
     max-width: 300px;
   }
 
   .texto h3 {
-    text-align: center; /* Centra el texto dentro del contenedor */
-    font-size: 18px; /* Achicamos un poco el texto para que entre en el cartel */
+    text-align: center; /*centra el texto dentro del contenedor */
+    font-size: 18px; /* achicamos un poco el texto para que entre en el cartel*/
   }
 }

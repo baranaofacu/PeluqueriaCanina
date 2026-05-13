@@ -1,23 +1,23 @@
 let imagenes = [
   {
-    url: "img/servicio1.jpg",
-    texto: "Desenredado y cepillado",
+    url: "img/perros-pag/Chocolate.jpg",
+    texto: "Chocolate",
   },
   {
-    url: "img/servicio2.jpg",
-    texto: "Corte de pelo personalizado",
+    url: "img/perros-pag/Mora.jpg",
+    texto: "Mora",
   },
   {
-    url: "img/servicio3.jpg",
-    texto: "Baño y secado",
+    url: "img/perros-pag/Homero.jpg",
+    texto: "Homero",
   },
   {
-    url: "img/servicio4.jpg",
-    texto: "Corte de uñas",
+    url: "img/perros-pag/Pulgoso.jpeg",
+    texto: "Pulgoso",
   },
   {
-    url: "img/servicio5.jpg",
-    texto: "Limpieza de oídos",
+    url: "img/perros-pag/Mustafar.jpg",
+    texto: "Mustafar",
   },
 ];
 

@@ -18,21 +18,20 @@ body {
 }
 
 .logo-main {
-  width: 300px; /* Ajusta el tamaño del logo según sea necesario */
+  width: 300px; 
   height: auto;
 }
 
 header {
   background-color: #e7390d;
   color: white;
-  /* Quitamos el padding lateral para que la nav toque los bordes */
   padding: 15px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* El h1 necesita un poquito de margen para no quedar pegado arriba */
+
 header h1 {
   margin-bottom: 20px;
 }
@@ -48,7 +47,7 @@ nav {
   list-style: none;
 
   margin: 0;
-  padding: 15px 40px; /* Un poco de padding para que no quede pegado a los bordes */
+  padding: 15px 40px; 
   gap: 30px;
   background-color: #fe730f;
 }
@@ -99,10 +98,10 @@ footer {
   }
 
   aside {
-    flex-direction: column; /* En celu que ocupe todo el ancho disponible */
+    flex-direction: column; 
   }
   nav .nav-list {
-    justify-content: center; /* Centra los enlaces en móvil */
-    padding: 15px 20px; /* Reduce el padding en móvil */
+    justify-content: center; 
+    padding: 15px 20px; 
   }
 }

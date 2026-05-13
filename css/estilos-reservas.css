@@ -1,0 +1,53 @@
+.reservas {
+  width: 100%;
+}
+
+.reservas h2 {
+  margin-bottom: 24px;
+  color: var(--texto-oscuro);
+}
+
+#sin-turnos {
+  color: #555;
+  font-style: italic;
+}
+
+#lista-turnos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.tarjeta-turno {
+  background-color: #F9D4BB;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1 1 250px;
+  max-width: 320px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tarjeta-turno p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.tarjeta-turno .turno-nombre {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--texto-oscuro);
+}
+
+.tarjeta-turno .turno-servicio {
+  font-weight: 500;
+  color: var(--texto-oscuro);
+}
+
+@media (max-width: 768px) {
+  .tarjeta-turno {
+    max-width: 100%;
+  }
+}

@@ -1,5 +1,6 @@
 // Array para guardar los turnos en memoria
-const turnosGuardados = [];
+const datos = localStorage.getItem("turnos_pelitos");
+const turnosGuardados = datos ? JSON.parse(datos) : [];
 
 document.addEventListener("DOMContentLoaded", () => {
   const miFormulario = document.getElementById("form-turno");
@@ -13,12 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
           duenio: document.getElementById("duenio").value,
           mascota: document.getElementById("mascota").value,
           servicio: document.getElementById("servicio").value,
-          fecha: document.getElementById("fecha").value,
+          fecha: document.getElementById("fecha").valuea,
           hora: document.getElementById("hora").value
         };
 
         turnosGuardados.push(nuevoTurno);
-        console.log("Turnos en memoria:", turnosGuardados);
+        localStorage.setItem('turnos_pelitos', JSON.stringify(turnosGuardados));
+        console.log("Turnos guardados en LocalStorage");
 
         const confirmacion = document.getElementById("confirmacion");
         confirmacion.textContent = `¡Turno para ${nuevoTurno.mascota} confirmado!`;
@@ -52,7 +54,7 @@ function validarFormulario() {
   });
   document.querySelectorAll("input, select").forEach(i => i.classList.remove("invalido"));
 
-  // 1. Nombre Dueño (ID: duenio)
+  // 1. Nombre Dueño 
   const duenio = document.getElementById("duenio").value.trim();
   const regexLetras = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
   if (duenio.length < 2 || !regexLetras.test(duenio)) {
@@ -60,21 +62,21 @@ function validarFormulario() {
     esValido = false;
   }
 
-  // 2. Nombre Mascota (ID: mascota)
+  // 2. Nombre Mascota 
   const mascota = document.getElementById("mascota").value.trim();
   if (mascota.length < 2) {
     mostrarError("err-mascota", "El nombre de la mascota debe tener al menos 2 caracteres.", "mascota");
     esValido = false;
   }
 
-  // 3. Servicio (ID: servicio)
+  // 3. Servicio 
   const servicio = document.getElementById("servicio").value;
   if (servicio === "") {
     mostrarError("err-servicio", "Seleccioná un servicio.", "servicio");
     esValido = false;
   }
 
-  // 4. Fecha (ID: fecha)
+  // 4. Fecha 
   const fechaInput = document.getElementById("fecha").value;
   const hoy = new Date().toISOString().split('T')[0];
   if (!fechaInput || fechaInput < hoy) {
@@ -82,7 +84,7 @@ function validarFormulario() {
     esValido = false;
   }
 
-  // 5. Hora (ID: hora)
+  // 5. Hora 
   const hora = document.getElementById("hora").value;
   if (!hora) {
     mostrarError("err-hora", "Elegí una hora.", "hora");
